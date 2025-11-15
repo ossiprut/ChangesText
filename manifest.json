@@ -1,0 +1,19 @@
+{
+  "manifest_version": 3,
+  "name": "changes text",
+  "version": "1.0",
+  "description": "Hi :D",
+    "icons": {
+    "128": "TheBeeMovieScript.png"
+    },
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "js": ["content.js"]
+    }
+  ],
+  "action": {
+    "default_title": "changes the text",
+    "default_popup": "popup.html"
+  }
+}
